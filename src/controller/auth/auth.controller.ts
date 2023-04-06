@@ -1,7 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import { validateUser } from "@service/auth.service";
-import { Login, User } from "@model/auth-model";
+// import { Login, User } from "@model/auth-model";
 import jwt from "jsonwebtoken"
+
+
 export default async (req: Request, res: Response, next: NextFunction) => {
 
     try {
