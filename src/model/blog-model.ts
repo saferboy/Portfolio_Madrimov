@@ -1,12 +1,11 @@
+import { Comments } from "./coments-model";
+import { Likes } from "./likes-model";
+
 export interface Blogs {
     id:         number,
     title:      string,
     content:    string,
     img:        string,
-    likes:      string,
-    comments:   string,
+    likes:      Likes,
+    comments:   Comments,
 }
-
-// likes !!!
-// likes[]
-// comments[]

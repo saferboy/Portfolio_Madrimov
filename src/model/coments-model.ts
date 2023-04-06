@@ -1,7 +1,9 @@
+import { Blogs } from "./blog-model"
+
 export interface Comments {
     id: number,
     email: string,
     comment: string,
-    blogs: string,
+    blogs: Blogs
     blogsId: number
 }

@@ -2,10 +2,10 @@ import dotenv from "dotenv"
 dotenv.config()
 
 
-import express from "express";
+import express, { Router } from "express";
 import cors from "cors"
 
-// import api from "./api/router"
+import api from "./api/router"
 
 
 const app = express()
@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: true}))
 
 const port = process.env.PORT
 
-// app.use('/api', api)
+app.use('/api', api)
 
 
 app.listen(port, () => {

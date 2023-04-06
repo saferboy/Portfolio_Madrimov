@@ -1,6 +1,8 @@
+import { Blogs } from "./blog-model";
+
 export interface Likes {
     id: number,
     uid:    string,
-    blogs:  string,
+    blogs:  Blogs,
     blogsid:    number
 }

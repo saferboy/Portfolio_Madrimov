@@ -3,3 +3,10 @@ export interface User {
     username:   string,
     password:   string
 }
+
+export interface Login {
+    email: string,
+    username: string,
+    password: string,
+    token: string
+}
