@@ -6,24 +6,17 @@ export default async (req: Request, res: Response, next: NextFunction) => {
 
     try {
 
-        const username = req.body
-        const password = req.body
-        
-        const user = await validateUser(username)
+        const data = req.body
+
+        const user = await validateUser(data.username)
 
         if (!user) {
-            return res.status(401).json({
-                message: "Not found this username"
+            return res.status(400).json({
+                message: `User with username ${data.username} not found` 
             })
         }
 
-        if (user.password != username.password) {
-            return res.status(401).json({
-                message: "Username or Password wrong"
-            })
-        }
-
-        const option = await updateLogin(username, password)
+        const option = await updateLogin(data.username, data.password)
 
         return res.status(200).json({
             message: "Your login has been updated successfully",
