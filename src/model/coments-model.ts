@@ -7,3 +7,8 @@ export interface Comments {
     blogs: Blogs
     blogsId: number
 }
+
+export interface CommentBody {
+    email: string,
+    comment: string
+}
