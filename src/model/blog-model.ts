@@ -9,3 +9,8 @@ export interface Blogs {
     likes:      Likes,
     comments:   Comments,
 }
+
+export interface BlogBody {
+    title: string,
+    content: string
+}

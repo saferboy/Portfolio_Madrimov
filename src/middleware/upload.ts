@@ -11,3 +11,5 @@ const storage = multer.diskStorage({
         callback(null, uuid() + '.png')
     }
 })
+
+export const upload = multer({ storage })
