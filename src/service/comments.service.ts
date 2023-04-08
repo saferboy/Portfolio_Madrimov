@@ -14,7 +14,20 @@ export const createComment = async (blogId: number, commentDto: CommentBody) => 
 }
 
 
+export const removeComment = async (commentId: number) => {
+    return prisma.comments.delete({
+        where: {
+            id: commentId
+        }
+    })
 
-export const removeComment = async () => {
+}
 
+
+export const findComment = async (id: number) => {
+    return prisma.comments.findUnique({
+        where: {
+            id: id
+        }
+    })
 }

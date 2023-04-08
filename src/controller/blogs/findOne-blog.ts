@@ -12,7 +12,7 @@ export default async (req: Request, res: Response, next: NextFunction) => {
 
         if (!blog) {
             return res.status(400).json({
-                message: `There's no Part with this ${id}`
+                message: `There's no Blog with this ${id}`
             })
         }
 
