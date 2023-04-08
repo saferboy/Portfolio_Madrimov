@@ -6,3 +6,7 @@ export interface Likes {
     blogs:  Blogs,
     blogsid:    number
 }
+
+export interface LikesBody {
+    uid: string
+}
