@@ -22,7 +22,7 @@ export const findOne = async (id: number) => {
 }
 
 
-export const findAll = async () => {
+export const findAllExperience = async () => {
     return prisma.experience.findMany()
 }
 
