@@ -40,7 +40,7 @@ export const updateExperience = async (id: number, experience: ExperinceDto) => 
 }
 
 
-export const removeExperience = async (id: number, experience: ExperinceDto) => {
+export const removeExperience = async (id: number) => {
     return prisma.experience.delete({
         where: {
             id: id
