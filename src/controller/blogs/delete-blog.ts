@@ -14,6 +14,7 @@ export default async (req: Request, res: Response, next: NextFunction) => {
                 message: `No information was found for this ${id}`
             })
         }
+        
         const blogs = await deleteBlog(id)
         
         return res.status(200).json({
