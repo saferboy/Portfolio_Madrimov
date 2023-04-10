@@ -6,7 +6,7 @@ import comment from "./comment"
 import like from "./likes"
 import hero from "./hero"
 import experience from "./experience"
-
+import works from "./works"
 
 const router = Router()
 
@@ -16,5 +16,6 @@ const router = Router()
     .use('/like', like)
     .use('/hero', hero)
     .use('/experience', experience)
+    .use('/works', works)
 
 export default router
