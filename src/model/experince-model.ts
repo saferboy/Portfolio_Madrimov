@@ -1,5 +1,5 @@
-export interface Experince {
+export interface ExperinceDto {
     id:             number,
-    year:           string,
+    year:           number,
     description:    string
 }
